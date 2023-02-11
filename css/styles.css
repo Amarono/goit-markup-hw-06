@@ -593,6 +593,12 @@ img {
   background-color: var(--succsess);
 }
 
+/**
+  |============================
+  | FOOTER-FORM
+  |============================
+*/
+
 /* MODAL */
 
 .backdrop {
@@ -619,13 +625,13 @@ img {
 .modal {
   position: absolute;
   top: 50%;
-
   left: 50%;
-  display: flex;
-  flex-direction: row-reverse;
-  width: 408px;
+  padding: 24px;
+  /* display: flex; */
+  /* flex-direction: row-reverse; */
+  /* width: 408px; */
 
-  height: 576px;
+  /* height: 576px; */
   border-radius: 4px;
 
   background-color: #fcfcfd;
@@ -636,13 +642,20 @@ img {
   transform: translate(-50%, -50%) scale(1);
 }
 
+.close-btn-thumb {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 24px;
+}
+
 .close-btn {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
-  margin-top: 24px;
+  /* margin-top: 24px; */
 
   margin-right: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -650,4 +663,96 @@ img {
 
   background: #e7e9fc;
   cursor: pointer;
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  box-sizing: border-box;
+  background-color: var(--pressed-state);
+  fill: white;
+}
+
+.form {
+  width: 360px;
+}
+.form-modal-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-label {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.form-label-name {
+  margin-top: 0;
+}
+
+.form-label {
+  color: var(--subtle-text);
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+.form-input {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  padding-left: 38px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.logo-form {
+  position: absolute;
+  top: 37px;
+  left: 16px;
+}
+
+.logo-form-person {
+  position: absolute;
+  top: 31px;
+}
+
+.form-input:focus {
+  border-color: var(--primary-brand);
+}
+
+.form-input:focus + .logo-form {
+  fill: var(--primary-brand);
+}
+
+.form-field textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+.input-comment {
+  width: 360px;
+  height: 120px;
+  padding-top: 8px;
+  padding-left: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.input-comment:focus {
+  border-color: var(--primary-brand);
 }
