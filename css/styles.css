@@ -598,7 +598,11 @@ img {
   | FOOTER-FORM
   |============================
 */
-
+.footer-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* MODAL */
 
 .backdrop {
