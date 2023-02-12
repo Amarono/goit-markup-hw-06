@@ -715,6 +715,8 @@ img {
   align-items: center;
   width: 24px;
   height: 24px;
+  top: 24px;
+  right: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
