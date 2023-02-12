@@ -654,6 +654,11 @@ img {
   fill: #ffffff;
 }
 
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: var(--pressed-state);
+}
+
 /* MODAL */
 
 .backdrop {
@@ -877,4 +882,9 @@ img {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+  background-color: var(--pressed-state);
 }
