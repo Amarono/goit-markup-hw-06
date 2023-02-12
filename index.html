@@ -528,13 +528,13 @@
           <p class="subscribe-title">Subscribe</p>
           <form class="form-subscribe" autocomplete="off">
             <label>
-              <input class="subscribe-input" type="email" name="E-mail" placeholder="E-mail" />
+              <input class="subscribe-input" name="E-mail" type="email" placeholder="E-mail" />
             </label>
 
             <button class="btn-subscribe" type="submit"
               >Subscribe
-              <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-submit"></use>
+              <svg class="svg-letter" width="24" height="24">
+                <use href="./images/icons.svg#icon-letter"></use>
               </svg>
             </button>
           </form>
@@ -551,6 +551,7 @@
             </svg>
           </button>
         </div>
+        <!-- MODAL-FIELD -->
         <p class="modal-form-title">Leave your contacts and we will call you back</p>
         <form class="form">
           <div class="form-modal-field" role="group">
@@ -584,17 +585,21 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="topic-options" role="group">
-            <label class="checkbox-label" for="policy">
-              <input class="checkbox-input" id="policy" name="policy" type="checkbox" />
-              <span class="icon"></span>
-              I accept the terms and conditions of the
-              <span class="privacy-policy"><a href="">Privacy Policy</a></span></label
-            >
-          </div>
-          <div class="btn-form">
-            <button class="btn-submit" type="submit">Send</button>
-          </div>
+          <label class="form-agreement">
+            <input
+              class="form-checkbox"
+              id="agreement"
+              name="agreement"
+              type="checkbox"
+              value="I accept the terms and conditions of the"
+            />
+            <span class="form-desc"
+              >I accept the terms and conditions of the
+              <a class="form-policy-link" href>Privacy Policy</a>
+            </span>
+          </label>
+
+          <button class="btn-send" type="submit">Send</button>
         </form>
       </div>
     </div>
