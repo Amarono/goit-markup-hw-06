@@ -705,7 +705,6 @@ img {
 .close-btn-thumb {
   display: flex;
   justify-content: end;
-  /* padding-bottom: 24px; */
 }
 
 .close-btn {
